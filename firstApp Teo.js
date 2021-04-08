@@ -2,6 +2,7 @@ const sensorLib = require(`node-dht-sensor`); // include existing module called 
 const http = require('http')
 // Setup sensor, exit if failed
 var sensorType = 11; // 11 for DHT11, 22 for DHT22 and AM2302 var sensorPin = 4; // The GPIO pin number for sensor signal
+var stringa = "pippa";
 if (!sensorLib.initialize(sensorType, sensorPin))
 {
 //print a warning message in the console console.warn('Failed to initialize sensor'); process.exit(1);
@@ -13,6 +14,7 @@ setInterval (function(){
 
     console.log('Temperature:', readout.temperature.toFixed(1) + 'C');
     console.log('Humidity: ', readout.humidity.toFixed(1) + '%');
+<<<<<<< HEAD
     
     var temperature = readout.temperature.toFixed(1);
 
@@ -52,3 +54,6 @@ setInterval (function(){
 }, 2000);
 
 
+=======
+}, 2000);
+>>>>>>> fecc77bddecc22630c7c469f968669d8443216ba
