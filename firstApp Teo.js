@@ -14,7 +14,6 @@ setInterval (function(){
 
     console.log('Temperature:', readout.temperature.toFixed(1) + 'C');
     console.log('Humidity: ', readout.humidity.toFixed(1) + '%');
-<<<<<<< HEAD
     
     var temperature = readout.temperature.toFixed(1);
 
@@ -54,6 +53,3 @@ setInterval (function(){
 }, 2000);
 
 
-=======
-}, 2000);
->>>>>>> fecc77bddecc22630c7c469f968669d8443216ba
